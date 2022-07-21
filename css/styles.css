@@ -553,6 +553,7 @@ color: #FFFFFF;
 }
 
 .project-item {
+  position: relative;
   margin-right: 30px;
   margin-bottom: 30px;
   background: var(--background-color);
@@ -596,5 +597,30 @@ color: #FFFFFF;
   font-size: 16px;
   line-height: 1.88;
   color: var(--basic-color);
+}
+
+.project-picture {
+  position: absolute;
+  display: flex;
+  top: 0;
+  min-width: 370px;
+  min-height: 294px;
+  background: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+}
+
+.project-insert {
+min-width: 322px;
+min-height: 168px;
+font-size: 18px;
+line-height: 1.56;
+padding: 63px 24px;
+color: #FFFFFF;
+opacity: 0;
+}
+
+.project-picture:hover,
+.project-insert:hover {
+  opacity: 1;
 }
 
