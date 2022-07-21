@@ -553,7 +553,8 @@ color: #FFFFFF;
 }
 
 .project-item {
-  position: relative;
+  position: relative; 
+  width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
   background: var(--background-color);
@@ -599,12 +600,10 @@ color: #FFFFFF;
   color: var(--basic-color);
 }
 
-.project-picture {
+.project-overlay {
   position: absolute;
   display: flex;
   top: 0;
-  min-width: 370px;
-  min-height: 294px;
   background: rgba(33, 150, 243, 0.9);
   opacity: 0;
 }
@@ -618,7 +617,6 @@ padding: 63px 24px;
 color: #FFFFFF;
 opacity: 0;
 }
-
 
 .project-picture:hover,
 .project-insert:hover {
