@@ -20,9 +20,13 @@
             <a href="./index.html" class="logo"><span class="item">Web</span>Studio</a>
             <nav>
                 <ul class="nav">
+
+                    
                     <li class="nav-item">
                         <a href="index.html" class="nav-link current">Студия</a>
                     </li>
+                    
+
                     <li class="nav-item">
                         <a href="portfolio.html" class="nav-link">Портфолио</a>
                     </li>
@@ -57,9 +61,21 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-                <button type="button" class="button">Заказать услугу</button>
+                <button type="button" class="button" data-modal-open>Заказать услугу</button>
             </div>
+            
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                   <div class="close-btn" >
+                        <svg class="modal-close" width='30' height="30" data-modal-close>
+                            <use href="./images/icons.svg#Close"></use>
+                        </svg>
+                   </div>
+                </div>
+            </div>
+
         </section>
+        
 
         <!-- ADVANTAGE -->
 
@@ -115,12 +131,21 @@
                 <ul class="work-list">
                     <li class="work-item">
                         <img src="images/kod.jpg" Alt="Программист набирает текст" width="370">
+                        <div class="applications">
+                            <p class="applications-text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
+                        </div>
                     </li>
                     <li class="work-item">
                         <img src="images/klava.jpg" Alt="Макеты телефонов" width="370">
+                        <div class="applications">
+                            <p class="applications-text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
+                        </div>
                     </li>
                     <li class="work-item">
                         <img src="images/ris.jpg" Alt="Выбор цвета дизайнером" width="370">
+                        <div class="applications">
+                            <p class="applications-text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -395,6 +420,8 @@
 
         document.body.style.paddingTop = `${pageHeaderHeight}px`;
     </script>
+
+    <script src="./js/modal.js"></script>
 
 </body>
 </html>

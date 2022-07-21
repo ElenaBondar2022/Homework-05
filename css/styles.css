@@ -190,6 +190,44 @@ section {
   color: var(--accent-color);
 }
 
+/* MODAL */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+} 
+
+.modal {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+min-width: 528px;
+min-height: 581px;
+
+background: #FFFFFF;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background: #FFFFFF;
+  
+}
+
 /* ADVANTAGE */
 .advantage-title {
   display: none;
@@ -262,11 +300,30 @@ section {
 }
 
 .work-item {
+  position: relative;
   display: inline;
 }
 
 .work-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.applications {
+  position: absolute;
+  bottom: 0;
+  min-width: 370px;
+  min-height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.applications-text {
+padding-top: 27px;
+padding-bottom: 27px;
+font-size: 14px;
+line-height: 1.14;
+text-align: center;
+color: #FFFFFF;
+
 }
 
 /* TEAM */
@@ -540,3 +597,4 @@ section {
   line-height: 1.88;
   color: var(--basic-color);
 }
+
