@@ -108,7 +108,7 @@ section {
   color: var(--accent-color);
 }
 
-.portfol::after {
+.portfol {
   content: '';
   width: 100%;
   height: 4px;
