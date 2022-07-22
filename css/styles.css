@@ -95,8 +95,9 @@ section {
 }
 
 .nav-link {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -108,8 +109,11 @@ section {
   color: var(--accent-color);
 }
 
-.portfol {
-  content: '';
+.current::after {
+  position: absolute; 
+  content: "";
+  left: 0px;
+  bottom: 0px;
   width: 100%;
   height: 4px;
   background: #2196F3;
