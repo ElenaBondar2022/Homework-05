@@ -254,9 +254,6 @@ border-radius: 4px;
   background: #FFFFFF;
 }
 
-.modal-close {
-  fill: var(--background-color);
-}
 
 .modal-close:hover,
 .modal-close:focus {
